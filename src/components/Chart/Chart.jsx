@@ -15,8 +15,6 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
             // bypass putting fetchDailyData into a variable, instead directly populates dailyData using setDailyData (set*** --> *** is a prebuilt feature of useState???)
         }
 
-        console.log(dailyData);
-
         fetchAPI();
     }, [])
 
